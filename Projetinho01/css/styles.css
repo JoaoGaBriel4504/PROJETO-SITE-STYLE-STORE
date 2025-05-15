@@ -1,0 +1,253 @@
+/* Reset e Configuração Geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(to right, #60B5FF, #AFDDFF);
+  padding: 50px 0;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+}
+
+/* Produtos */
+.produtos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: #fff;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.card .btn-primary {
+  background-color: #60B5FF;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card .btn-primary:hover {
+  background-color: #feb47b;
+}
+
+/* Carrinho */
+#carrinho-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carrinho-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carrinho-item:last-child {
+  border-bottom: none;
+}
+
+.carrinho-item p {
+  margin: 0;
+}
+
+#carrinho-link {
+  position: relative;
+}
+
+#carrinho-quantidade {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-size: 0.8rem;
+}
+
+.bi-cart {
+  font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.banner {
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  padding: 60px 0;
+  color: white;
+  text-align: center;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.menu-categorias {
+  background-color: white;
+  border-top: 4px solid #00aaff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  overflow-x: auto;
+  gap: 30px;
+  font-weight: 500;
+}
+
+.menu-categorias span {
+  color: black;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.menu-categorias .menu-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.menu-categorias .categoria-principal {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-icon {
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.dropdown-button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007BFF;
+}
