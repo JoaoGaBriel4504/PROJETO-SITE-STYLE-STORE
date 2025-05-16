@@ -3,27 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acessórios</title>
+    <title>STYLE STORE - Roupas</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <style></style>
   </head>
   <body>
     <header>
-      <div class="header-container">
-        <div class="logo">
-          STYLE STORE - <span style="font-weight: normal">Acessórios</span>
-        </div>
-        <div class="icons">
-          <button title="Favoritos">💙</button>
-          <button title="Carrinho de Compras">🛒</button>
-        </div>
-      </div>
+      <h1>STYLE STORE - Roupas</h1>
+      <button class="cart-button" onclick="toggleCart()">
+        🛒 <span id="cart-count" class="cart-count">0</span>
+      </button>
     </header>
 
-    <div class="container">
-      <div class="title">Acessórios em Destaque</div>
-
-      <div class="products">
+    <div class="products-section">
+      <h2>Roupas em Alta</h2>
+      <div class="product-grid">
         <div class="card">
           <img src="img/p23.jpg" alt="Relógio" />
           <h3>Relógio Unisex</h3>
@@ -159,7 +152,99 @@
           <div class="price">R$ 79,90</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
-      </div>
+
+
+
+    <div class="cart-modal" id="cart-modal">
+      <h3>Seu Carrinho</h3>
+      <div id="cart-items"></div>
+      <div id="cart-total" style="margin-top: 1em; font-weight: bold"></div>
+      <button id="checkout-btn" onclick="checkout()">Finalizar Compra</button>
     </div>
+
+    <footer>
+      <p>&copy; 2025 STYLE STORE - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      function updateCartCount() {
+        document.getElementById("cart-count").textContent = cart.length;
+      }
+
+      function toggleCart() {
+        const modal = document.getElementById("cart-modal");
+        modal.style.display = modal.style.display === "block" ? "none" : "block";
+        if (modal.style.display === "block") renderCartItems();
+      }
+
+      function addToCart(name, price) {
+        cart.push({ name, price });
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        renderCartItems();
+      }
+
+      function removeFromCart(index) {
+        cart.splice(index, 1);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        renderCartItems();
+      }
+
+      function renderCartItems() {
+        const container = document.getElementById("cart-items");
+        const totalEl = document.getElementById("cart-total");
+        container.innerHTML = "";
+        let total = 0;
+
+        if (cart.length === 0) {
+          container.innerHTML = "<p>Seu carrinho está vazio.</p>";
+          totalEl.textContent = "";
+          return;
+        }
+
+        cart.forEach((item, index) => {
+          const div = document.createElement("div");
+          div.className = "cart-item";
+          div.innerHTML = `
+            <span>${item.name} - ${item.price}</span>
+            <button onclick="removeFromCart(${index})">x</button>
+          `;
+          container.appendChild(div);
+
+          const valor = parseFloat(item.price.replace("R$", "").replace(",", "."));
+          total += valor;
+        });
+
+        totalEl.textContent = `Total: R$ ${total.toFixed(2).replace(".", ",")}`;
+      }
+
+      function checkout() {
+        if (cart.length === 0) {
+          alert("Seu carrinho está vazio!");
+          return;
+        }
+
+        alert("Compra finalizada com sucesso!");
+        cart = [];
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        renderCartItems();
+        toggleCart();
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        updateCartCount();
+
+        document.querySelectorAll(".card").forEach((card) => {
+          const name = card.querySelector("h3").textContent;
+          const price = card.querySelector(".price").textContent;
+          const button = card.querySelector(".button");
+          button.addEventListener("click", () => addToCart(name, price));
+        });
+      });
+    </script>
   </body>
 </html>
