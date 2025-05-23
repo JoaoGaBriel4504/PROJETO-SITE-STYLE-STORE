@@ -3,31 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lançamentos</title>
+    <title>STYLE STORE - LANÇAMENTOS</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <style></style>
   </head>
   <body>
     <header>
-      <div class="header-container">
-        <div class="logo">
-          STYLE STORE - <span style="font-weight: normal">Lançamentos</span>
-        </div>
-        <div class="icons">
-          <button title="Favoritos">❤️</button>
-          <button title="Carrinho de Compras">🛒</button>
-        </div>
-      </div>
+      <h1>STYLE STORE- Lançamentos</h1>
+      <button class="cart-button" onclick="toggleCart()">
+        🛒 <span id="cart-count" class="cart-count">0</span>
+      </button>
     </header>
 
-    <div class="container">
-      <div class="title">Lançamentos :)</div>
-
-      <div class="products">
+    <div class="products-section">
+      <h2>LANÇAMENTOS</h2>
+      <div class="product-grid">
         <div class="card">
           <img src="img/img1.png" alt="Vestido" />
           <h3>Vestido Midi Vivienne Feminina</h3>
-          <p>Para você que ama sofisticação e um toque de charme em cada passo.</p>
+          <span>Para você que ama sofisticação e um toque de charme em cada passo.</span>
           <div class="price">R$ 329,00</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
@@ -35,7 +28,7 @@
         <div class="card">
           <img src="img/img2.png" alt="Camiseta Regata" />
           <h3>Kit 3 Camiseta Regata Muscle Feminina</h3>
-          <p>Versatilidade e conforto que acompanham seu ritmo o dia todo.</p>
+          <span>Versatilidade e conforto que acompanham seu ritmo o dia todo.</span>
           <div class="price">R$ 80,99</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
@@ -43,15 +36,15 @@
         <div class="card">
           <img src="img/img3.png" alt="Kimono" />
           <h3>Kimono Cardigan Feminina</h3>
-          <p>O equilíbrio perfeito entre conforto e atitude pra qualquer look.</p>
+          <span>O equilíbrio perfeito entre conforto e atitude pra qualquer look.</span>
           <div class="price">R$ 45,00</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
-        
+
         <div class="card">
           <img src="img/img4.png" alt="Calça Jens" />
           <h3>Calça Jeans Feminina Wide Leg</h3>
-          <p>Estilo que solta o corpo e grita conforto.</p>
+          <span>Estilo que solta o corpo e grita conforto.</span>
           <div class="price">R$ 65,00</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
@@ -59,15 +52,15 @@
         <div class="card">
           <img src="img/pa1.png" alt="Tenis" />
           <h3>Tênis Nike Air Max Plus</h3>
-          <p>Detalhes que fazem a diferença.</p>
-          <div class="price">R$ 1.234,99</div>
+          <span>Detalhes que fazem a diferença.</span>
+          <div class="price">R$ 995,90</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
 
         <div class="card">
           <img src="img/pa2.png" alt="Dry Fit" />
           <h3>Kit 5 Peças Dry Fit: 3 Camisetas + 2 Bermudas</h3>
-          <p>Beleza refinada.</p>
+          <span>Beleza refinada.</span>
           <div class="price">R$ 79,90</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
@@ -75,7 +68,7 @@
         <div class="card">
           <img src="img/pa3.png" alt="Jaqueta" />
           <h3>Jaqueta Masculina Impermeável</h3>
-          <p>Toque sofisticado.</p>
+          <span>Toque sofisticado.</span>
           <div class="price">R$ 159,90</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
@@ -83,15 +76,15 @@
         <div class="card">
           <img src="img/pa4.png" alt="Jaqueta" />
           <h3>Jaqueta Nike Puffer Sportswear</h3>
-          <p>Estilo delicado.</p>
-          <div class="price">R$ 1.240,00</div>
+          <span>Estilo delicado.</span>
+          <div class="price">R$ 352,90</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
 
         <div class="card">
           <img src="img/pa5.png" alt="Bebe" />
           <h3>Conjunto de Moletom Aconchego - Ursinho Feliz! </h3>
-          <p>Cinto masculino Hugo Boss.</p>
+          <span>Cinto masculino Hugo Boss.</span>
           <div class="price">R$ 150,00</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
@@ -99,7 +92,7 @@
         <div class="card">
           <img src="img/pa6.png" alt="Bebe" />
           <h3>Jaqueta Infantil com Capuz Puffer</h3>
-          <p>Design esportivo moderno.</p>
+          <span>Design esportivo moderno.</span>
           <div class="price">R$ 170,00</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
@@ -107,7 +100,7 @@
         <div class="card">
           <img src="img/pa7.png" alt="Bebe" />
           <h3>Fantasia Monstros S.A </h3>
-          <p>Conjunto elegante e ousado.</p>
+          <span>Conjunto elegante e ousado.</span>
           <div class="price">R$ 279,90</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
@@ -115,7 +108,7 @@
         <div class="card">
           <img src="img/pa8.png" alt="Bebe" />
           <h3>Brinco Masculino</h3>
-          <p>Estilo marcante e simbólico.</p>
+          <span>Estilo marcante e simbólico.</span>
           <div class="price">R$ 89,90</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
@@ -123,7 +116,7 @@
         <div class="card">
           <img src="img/pa9.png" alt="Cademia" />
           <h3>Kit Camiseta Compressão</h3>
-          <p>Estilo marcante e simbólico.</p>
+          <span>Estilo marcante e simbólico.</span>
           <div class="price">R$ 140,00</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
@@ -131,88 +124,165 @@
         <div class="card">
           <img src="img/pa10.png" alt="Briga" />
           <h3>Kit Jiu Jitsu</h3>
-          <p>Estilo marcante e simbólico.</p>
+          <span>Estilo marcante e simbólico.</span>
           <div class="price">R$ 100,00</div>
           <button class="button">Adicionar ao Carrinho</button>
         </div>
 
-        <div class="card">
-          <img src="img/pa11.png" alt="Mue" />
-          <h3>Conjunto Academia Feminino</h3>
-          <p>Estilo marcante e simbólico.</p>
-          <div class="price">R$ 49,90</div>
-          <button class="button">Adicionar ao Carrinho</button>
-        </div>
+<div class="card">
+<img src="img/pa11.png" alt="Mue" />
+<h3>Conjunto Academia Feminino</h3>
+<p>Estilo marcante e simbólico.</p>
+<div class="price">R$ 49,90</div>
+<button class="button">Adicionar ao Carrinho</button>
+</div>
 
-        <div class="card">
-          <img src="img/pa12.png" alt="Brinco de Argola Prata" />
-          <h3>Conjunto para academia</h3>
-          <p>Estilo marcante e simbólico.</p>
-          <div class="price">R$ 79,90</div>
-          <button class="button">Adicionar ao Carrinho</button>
-        </div>
+<div class="card">
+<img src="img/pa12.png" alt="Brinco de Argola Prata" />
+<h3>Conjunto para academia</h3>
+<p>Estilo marcante e simbólico.</p>
+<div class="price">R$ 79,90</div>
+<button class="button">Adicionar ao Carrinho</button>
+</div>
 
-        <div class="card">
-          <img src="img/pa13.png" alt="Perfume" />
-          <h3>Lattafa Asad Edp</h3>
-          <p>Estilo marcante e simbólico.</p>
-          <div class="price">R$ 299,90</div>
-          <button class="button">Adicionar ao Carrinho</button>
-        </div>
+<div class="card">
+<img src="img/pa13.png" alt="Perfume" />
+<h3>Lattafa Asad Edp</h3>
+<p>Estilo marcante e simbólico.</p>
+<div class="price">R$ 299,90</div>
+<button class="button">Adicionar ao Carrinho</button>
+</div>
 
-        <div class="card">
-          <img src="img/pa14.png" alt="Perfume" />
-          <h3>Versace Eros Eau</h3>
-          <p>Estilo marcante e simbólico.</p>
-          <div class="price">R$ 694,90</div>
-          <button class="button">Adicionar ao Carrinho</button>
-        </div>
-
-
-
-        <div class="card">
-          <img src="img/pa15.png" alt="Perfume" />
-          <h3>lancôme la vie est belle</h3>
-          <p>Estilo marcante e simbólico.</p>
-          <div class="price">R$ 589,90</div>
-          <button class="button">Adicionar ao Carrinho</button>
-        </div>
-
-      <div class="card">
-          <img src="img/pa16.png" alt="Perfume" />
-          <h3>J'adore Dior Eau de Parfum</h3>
-          <p>Estilo marcante e simbólico.</p>
-          <div class="price">R$ 829,90</div>
-          <button class="button">Adicionar ao Carrinho</button>
-        </div>
+<div class="card">
+<img src="img/pa14.png" alt="Perfume" />
+<h3>Versace Eros Eau</h3>
+<p>Estilo marcante e simbólico.</p>
+<div class="price">R$ 694,90</div>
+<button class="button">Adicionar ao Carrinho</button>
+</div>
 
 
+
+<div class="card">
+<img src="img/pa15.png" alt="Perfume" />
+<h3>lancôme la vie est belle</h3>
+<p>Estilo marcante e simbólico.</p>
+<div class="price">R$ 589,90</div>
+<button class="button">Adicionar ao Carrinho</button>
+</div>
+
+<div class="card">
+<img src="img/pa16.png" alt="Perfume" />
+<h3>J'adore Dior Eau de Parfum</h3>
+<p>Estilo marcante e simbólico.</p>
+<div class="price">R$ 829,90</div>
+<button class="button">Adicionar ao Carrinho</button>
+    </div>
+
+        <!-- Adicione os outros cards aqui conforme seu código original -->
       </div>
     </div>
-  </body>
-</html>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coupon Positioning</title>
-    <style>
-      .coupon {
-        position: absolute; 
-        top: 50px; 
-        right: 0; 
-        z-index: 10; 
-      }
-    </style>
-  </head>
-  <body>
-    
-    <img src="img/desconto.png" style="width: 400px; height: 500px;" alt="Cupom de desconto" class="coupon" />
-    <div>
-      <!-- Conteúdo da página -->
-      <button class="button">Adicionar ao Carrinho</button>
+    <div class="cart-modal" id="cart-modal">
+      <h3>Seu Carrinho</h3>
+      <div id="cart-items"></div>
+      <div id="cart-total" style="margin-top: 1em; font-weight: bold"></div>
+      <button id="checkout-btn" onclick="checkout()">Finalizar Compra</button>
     </div>
+
+    <div style="background-color: #eeeeee">
+      <img
+        src="./img/BARRA.png"
+        alt="Informações adicionais do rodapé"
+        style="display: block; width: 99%; height: auto; margin-bottom: 0"
+      />
+    </div>
+
+    <script>
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      function updateCartCount() {
+        document.getElementById("cart-count").textContent = cart.length;
+      }
+
+      function toggleCart() {
+        const modal = document.getElementById("cart-modal");
+        if (modal.style.display === "block") {
+          modal.style.display = "none";
+        } else {
+          modal.style.display = "block";
+          renderCartItems();
+        }
+      }
+
+      function addToCart(name, price) {
+        cart.push({ name, price });
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        renderCartItems();
+      }
+
+      function removeFromCart(index) {
+        cart.splice(index, 1);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        renderCartItems();
+      }
+
+      function renderCartItems() {
+        const container = document.getElementById("cart-items");
+        const totalEl = document.getElementById("cart-total");
+        container.innerHTML = "";
+        let total = 0;
+
+        if (cart.length === 0) {
+          container.innerHTML = "<p>Seu carrinho está vazio.</p>";
+          totalEl.textContent = "";
+          return;
+        }
+
+        cart.forEach((item, index) => {
+          const div = document.createElement("div");
+          div.className = "cart-item";
+          div.innerHTML = `
+          <span>${item.name} - ${item.price}</span>
+          <button onclick="removeFromCart(${index})">x</button>
+        `;
+          container.appendChild(div);
+
+          const valor = parseFloat(
+            item.price.replace("R$", "").replace(",", ".")
+          );
+          total += valor;
+        });
+
+        totalEl.textContent = `Total: R$ ${total.toFixed(2).replace(".", ",")}`;
+      }
+
+      function checkout() {
+        if (cart.length === 0) {
+          alert("Seu carrinho está vazio!");
+          return;
+        }
+
+        alert("Compra finalizada com sucesso!");
+        cart = [];
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        renderCartItems();
+        toggleCart(); // fecha o modal após finalizar
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        updateCartCount();
+
+        document.querySelectorAll(".card").forEach((card) => {
+          const name = card.querySelector("h3").textContent;
+          const price = card.querySelector(".price").textContent;
+          const button = card.querySelector(".button");
+          button.addEventListener("click", () => addToCart(name, price));
+        });
+      });
+    </script>
   </body>
 </html>

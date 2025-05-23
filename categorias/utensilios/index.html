@@ -1,11 +1,297 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STYLE STORE - UTENSÍLIOS</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>STYLE STORE - UTENSÍLIOS</h1>
+      <button class="cart-button" onclick="toggleCart()">
+        🛒 <span id="cart-count" class="cart-count">0</span>
+      </button>
+    </header>
+
+    <div class="products-section">
+      <h2>Utensílios em Alta</h2>
+      <div class="product-grid">
+        <div class="card">
+          <img src="img/l1.jpg" alt="Organizador De Pincéis" />
+          <h3>Organizador De Pincéis</h3>
+          <p>Estilo casual com toque esportivo.</p>
+          <div class="price">R$ 25,90</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l2.jpg" alt="Tapete em Formato de Coração" />
+          <h3>Tapete em Formato de Coração</h3>
+          <p>Conforto e design icônico.</p>
+          <div class="price">R$ 45,00</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l3.jpg" alt="Mini Almofada de Algodão" />
+          <h3>Mini Almofada de Algodão</h3>
+          <p>Resistência ideal para o dia a dia.</p>
+          <div class="price">R$ 29,99</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l4.jpg" alt="Conjunto Café da Tarde" />
+          <h3>Conjunto Café da Tarde</h3>
+          <p>Ideal para manter o estilo no frio.</p>
+          <div class="price">R$ 129,90</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l5.jpg" alt="Conjunto Mesa + Cadeiras" />
+          <h3>Conjunto Mesa + Cadeiras</h3>
+          <p>Estilo urbano e aquecido.</p>
+          <div class="price">R$ 159,99</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l6.jpg" alt="Conjunto Cinco Prateleiras" />
+          <h3>Conjunto Cinco Prateleiras</h3>
+          <p>Performance e atitude no mesmo tênis.</p>
+          <div class="price">R$ 67,00</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l7.jpg" alt="Relógio Analógico Feminino" />
+          <h3>Relógio Analógico Feminino</h3>
+          <p>Conforto para dias de sol.</p>
+          <div class="price">R$ 25,50</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l8.jpg" alt="KIT Saboneteira de Banheiro" />
+          <h3>KIT Saboneteira de Banheiro</h3>
+          <p>Leve e estilosa para o cotidiano.</p>
+          <div class="price">R$ 99,90</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l9.jpg" alt="Prateleira Fechada" />
+          <h3>Prateleira Fechada</h3>
+          <p>Estampa marcante para quem curte atitude.</p>
+          <div class="price">R$ 29,90</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l10.jpg" alt="Evaporizador de Ar" />
+          <h3>Evaporizador de Ar</h3>
+          <p>Arte e estilo numa só peça.</p>
+          <div class="price">R$ 59,80</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l11.jpg" alt="Mini Porta Acessorios + Espelho" />
+          <h3>Mini Porta Acessorios + Espelho</h3>
+          <p>Toque esportivo com conforto térmico.</p>
+          <div class="price">R$ 19,90</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l12.jpg" alt="Conjuntos Três Toalhas de Banho + Uma Toalha de rosto" />
+          <h3>Conjuntos Três Toalhas de Banho + Uma Toalha de rosto</h3>
+          <p>Design ousado com conforto premium.</p>
+          <div class="price">R$ 59,90</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l13.jpg" alt="KIT Panelas de Ceramica" />
+          <h3>KIT Panelas de Ceramica</h3>
+          <p>Estilo vibrante e moderno.</p>
+          <div class="price">R$ 179,90</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l14.jpg" alt="Mesa de Centro Dourada" />
+          <h3>Mesa de Centro Dourada</h3>
+          <p>Colab única e cheia de atitude.</p>
+          <div class="price">R$ 69,90</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l15.jpg" alt="KIT Talher" />
+          <h3>KIT Talher</h3>
+          <p>Clássica e indispensável no guarda-roupa.</p>
+          <div class="price">R$ 45,40</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l16.jpg" alt="Lustre Central" />
+          <h3>Lustre Central</h3>
+          <p>Conjunto estiloso para qualquer ocasião.</p>
+          <div class="price">R$ 129,90</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l17.jpg" alt="Separador de Pratelheira" />
+          <h3>Separador de Pratelheira</h3>
+          <p>Luxo até nos momentos de descanso.</p>
+          <div class="price">R$ 19,80</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l18.jpg" alt="Porta Joias" />
+          <h3>Porta Joias</h3>
+          <p>Brilhe com elegância em qualquer festa.</p>
+          <div class="price">R$ 39,90</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l19.jpg" alt="Abajur em Formato de Lua" />
+          <h3>Abajur em Formato de Lua</h3>
+          <p>Casual e cheio de atitude.</p>
+          <div class="price">R$ 14,99</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+          <img src="img/l20.jpg" alt="Tábua de Vidro + Faca" />
+          <h3>Tábua de Vidro + Faca</h3>
+          <p>Elegância e luxo no seu caminhar.</p>
+          <div class="price">R$ 59,90</div>
+          <button class="button">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="card">
+            <img src="img/l21.jpg" alt="Filtro Eletrônico" />
+            <h3>Filtro Eletrônico</h3>
+            <p>Elegância e luxo no seu caminhar.</p>
+            <div class="price">R$ 97,90</div>
+            <button class="button">Adicionar ao Carrinho</button>
+          </div>
+      </div>
+    </div>
+
+
+        <!-- Adicione os outros cards aqui conforme seu código original -->
+      </div>
+    </div>
+
+    <div class="cart-modal" id="cart-modal">
+      <h3>Seu Carrinho</h3>
+      <div id="cart-items"></div>
+      <div id="cart-total" style="margin-top: 1em; font-weight: bold"></div>
+      <button id="checkout-btn" onclick="checkout()">Finalizar Compra</button>
+    </div>
+
+    <div style="background-color: #eeeeee">
+      <img
+        src="./img/BARRA.png"
+        alt="Informações adicionais do rodapé"
+        style="display: block; width: 99%; height: auto; margin-bottom: 0"
+      />
+    </div>
+
+    <script>
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      function updateCartCount() {
+        document.getElementById("cart-count").textContent = cart.length;
+      }
+
+      function toggleCart() {
+        const modal = document.getElementById("cart-modal");
+        if (modal.style.display === "block") {
+          modal.style.display = "none";
+        } else {
+          modal.style.display = "block";
+          renderCartItems();
+        }
+      }
+
+      function addToCart(name, price) {
+        cart.push({ name, price });
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        renderCartItems();
+      }
+
+      function removeFromCart(index) {
+        cart.splice(index, 1);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        renderCartItems();
+      }
+
+      function renderCartItems() {
+        const container = document.getElementById("cart-items");
+        const totalEl = document.getElementById("cart-total");
+        container.innerHTML = "";
+        let total = 0;
+
+        if (cart.length === 0) {
+          container.innerHTML = "<p>Seu carrinho está vazio.</p>";
+          totalEl.textContent = "";
+          return;
+        }
+
+        cart.forEach((item, index) => {
+          const div = document.createElement("div");
+          div.className = "cart-item";
+          div.innerHTML = `
+          <span>${item.name} - ${item.price}</span>
+          <button onclick="removeFromCart(${index})">x</button>
+        `;
+          container.appendChild(div);
+
+          const valor = parseFloat(
+            item.price.replace("R$", "").replace(",", ".")
+          );
+          total += valor;
+        });
+
+        totalEl.textContent = `Total: R$ ${total.toFixed(2).replace(".", ",")}`;
+      }
+
+      function checkout() {
+        if (cart.length === 0) {
+          alert("Seu carrinho está vazio!");
+          return;
+        }
+
+        alert("Compra finalizada com sucesso!");
+        cart = [];
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        renderCartItems();
+        toggleCart(); // fecha o modal após finalizar
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        updateCartCount();
+
+        document.querySelectorAll(".card").forEach((card) => {
+          const name = card.querySelector("h3").textContent;
+          const price = card.querySelector(".price").textContent;
+          const button = card.querySelector(".button");
+          button.addEventListener("click", () => addToCart(name, price));
+        });
+      });
+    </script>
+  </body>
 </html>
