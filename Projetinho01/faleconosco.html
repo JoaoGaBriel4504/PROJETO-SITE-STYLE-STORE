@@ -1,94 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sobre a STYLE STORE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - STYLE STORE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Cabeçalho -->
+    <header class="bg-cyan-400 py-6 text-center">
+      <h1 class="text-white text-3xl font-bold">STYLE STORE</h1>
+    </header>
 
-    header {
-      background-color: #00bfff;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
+    <!-- Conteúdo Principal -->
+    <main class="max-w-4xl mx-auto mt-10 space-y-6">
+      <!-- Título da Página -->
+      <div class="bg-white shadow-md rounded p-6">
+        <h2 class="text-cyan-500 text-xl font-bold mb-2">Fale Conosco</h2>
+        <p>
+          Entre em contato com a nossa equipe. Responderemos o mais breve
+          possível!
+        </p>
+      </div>
 
-    header h1 {
-      font-size: 2.5rem;
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      letter-spacing: 2px;
-    }
+      <!-- Formulário de Contato -->
+      <div class="bg-white shadow-md rounded p-6">
+        <form class="space-y-4">
+          <div>
+            <label for="nome" class="block text-sm font-medium text-gray-700"
+              >Nome</label
+            >
+            <input
+              type="text"
+              id="nome"
+              class="mt-1 block w-full border border-gray-300 rounded p-2"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >E-mail</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="mt-1 block w-full border border-gray-300 rounded p-2"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="mensagem"
+              class="block text-sm font-medium text-gray-700"
+              >Mensagem</label
+            >
+            <textarea
+              id="mensagem"
+              rows="4"
+              class="mt-1 block w-full border border-gray-300 rounded p-2"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
 
-    main {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
+      <!-- Informações de Contato -->
+      <div class="bg-white shadow-md rounded p-6">
+        <h2 class="text-cyan-500 text-xl font-bold mb-2">
+          Outros Meios de Contato:
+        </h2>
+        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+          <li>Email: contato@stylestore.com</li>
+          <li>Telefone: (14) 99775-9495</li>
+          <li>Endereço: R. Cap. José Ribeiro, 294 - Jaú/SP</li>
+          <li>Horário de Atendimento: Seg a Sex, das 9h às 18h</li>
+        </ul>
+      </div>
+    </main>
 
-    h2 {
-      color: #00bfff;
-    }
+    <!-- Rodapé -->
 
-    .card {
-      background: white;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 1.5rem;
-    }
-
-    footer {
-      background-color: #00bfff;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>STYLE STORE</h1>
-  </header>
-
-  <main>
-    <div class="card">
-      <h2>Quem Somos:</h2>
-      <p>A STYLE STORE é uma loja moderna focada em oferecer produtos que combinam estilo, qualidade e praticidade. Nosso objetivo é transformar o seu dia a dia com itens que fazem a diferença.</p>
+    <div style="background-color: #eeeeee">
+      <img
+        src="./img/BARRA.png"
+        alt="Informações adicionais do rodapé"
+        style="display: block; width: 99%; height: auto; margin-bottom: 0"
+      />
     </div>
-
-    <div class="card">
-      <h2>Nosso Objetivo:</h2>
-      <p>Levar até você produtos incríveis com atendimento ágil, preços justos e uma experiência de compra diferenciada.</p>
-    </div>
-
-    <div class="card">
-      <h2>Valores:</h2>
-      <ul>
-        <li>Atendimento com respeito e empatia</li>
-        <li>Qualidade e inovação em cada produto</li>
-        <li>Transparência e compromisso com o cliente</li>
-      </ul>
-    </div>
-  </main>
-
-  <div style="background-color: #eeeeee">
-    <img
-      src="./img/BARRA.png"
-      alt="Informações adicionais do rodapé"
-      style="display: block; width: 99%; height: auto; margin-bottom: 0"
-    />
-  </div>
-
-
-</body>
+  </body>
 </html>

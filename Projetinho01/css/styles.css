@@ -251,3 +251,46 @@ body {
 .nav-links a:hover {
   color: #007BFF;
 }
+
+.card {
+  width: 100%;
+  max-width: 300px; /* aumente esse valor conforme desejar */
+  margin: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 220px; /* ajuste conforme necessário */
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 0 10px 10px;
+}
+
+.card .price {
+  font-size: 16px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.card .button {
+  margin: 10px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
